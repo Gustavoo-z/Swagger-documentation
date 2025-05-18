@@ -26,7 +26,7 @@ class App {
 
   private async database() {
     try {
-      await mongoose.connect("mongodb://0.0.0.0:27017/books");
+      await mongoose.connect("mongodb://localhost:27017/books");
       console.log("connect database success");
     } catch (err) {
       console.error("Fail to connect database", err);
